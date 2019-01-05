@@ -1,0 +1,256 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang8202{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset1 Cambria Math;}{\f2\fnil\fcharset0 Cambria Math;}{\f3\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 6.2.9200}{\*\mmathPr\mmathFont1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\ul\b\fs22\lang10 1-Bootstrap 4 \'bfQu\'e9 trae de nuevo esta versi\'f3n?\ulnone\b0\par
+\b Notas:\par
+Las novedades de Bootstrap\b0\par
+\par
+- Cambios en el GRID\par
+- Glyphicons es sustituido por Font Awesome.\par
+- Adios a Less\par
+- No m\'e1s soporte para Internet Explorer 8\par
+- Flexbox\par
+\par
+\ul\b 2-\'bfQue es un framework frontend?\ulnone\b0\par
+\b Notas:\par
+Framework Front-End o Framework Css\b0\par
+Son una base para inicializar un proyecto web permitiendo flexibilidad en el dise\'f1o. Brindan organizaci\'f3n y estructura para los archivos html, css y javascript.\par
+\par
+\b Componentes Principales de un Framework Front-End\b0\par
+- Grilla\par
+- Estilos para las fuentes\par
+- Componentes visuales pre-armados\par
+\par
+\b Razones para usar un Framework Front-End\b0\par
+- Ahorrar tiempo de desarrollo\par
+- Componentes visuales pre-armados\par
+- Responsive Design establecido en todo el layout\par
+- El c\'f3digo tiene m\'e1xima compatibilidad\par
+\par
+\b Frameworks Front-End\b0\par
+- Bootstrap\par
+- Foundation\par
+- Bulma\par
+- Flexbox Grid\par
+\par
+\ul\b 3-Nuestro Proyecto: Hola Mundo de Bootstrap\par
+\ulnone\b0 Vamos a sitio web oficial de Bootstrap en getbootstrap.com . Cualquier duda que tengas sobre los componentes y su uso que no se respondan en este curso, lo puedes encontrar en la secci\'f3n de Documentation del sitio de Bootstrap.\par
+\par
+\b Notas:\par
+Es importante precisar que existen 2 formas para utiliza bootstrap:\par
+\b0\par
+\b 1. Mediante el CDN: \b0 En este video, Sacha copia la plantilla de inicio que, contiene la referencia a los css y a 3 archivos javascript. Dentro de los cJS est\'e1n:\par
+**a. **La referencia a JQuery (S\'ed, utiliza JQuery para las funciones que css, por obvias razones no podr\'eda implementar)\par
+b. Referencia a Popper.JS: Esta herramienta nos sirve para crear los popUps (esos mensajes flotantes que se muestran al posicionar el cursor en un lugar predeterminado)\par
+**c. **Finalmente llama al JS de bootstrap.\par
+\par
+Por otro lado, noten que cada referencia contiene un .min dentro de sus nombres (por ejemplo; bootstrap.min.css, \'85jquery-3.3.1.slim.min.js, etc) que no es m\'e1s que la versi\'f3n minificada(sin espacios) de\par
+cada archivo de c\'f3digo.\par
+\par
+\b 2. Descargando todos los archivos comprimidos:\b0\par
+Otra de las opciones es descargando todos los archivos que componen Bootstrap, esta opci\'f3n es interesante ya que te permite trabajar sin conexi\'f3n a internet, cosa que no puedes hacer con laa opci\'f3n anterior.\par
+\par
+\ul\b 4-La grilla de Bootstrap\ulnone\b0\par
+\b Notas:\b0\par
+Crear un contenedor de ancho fijo\par
+\par
+El contenedor ocupara un ancho fijo determinado.\par
+\b\i <div class="container" style="background-color: red;">\par
+    <!-- Content here -->\par
+</div>\par
+\b0\i0\par
+Crear un contenedor de ancho fluido\par
+\par
+El contenedor ocupara todo el ancho de la pantalla.\par
+\b\i <div class="container-fluid" style="background-color: red;">\par
+    <!-- Content here -->\par
+</div>\par
+\b0\i0\par
+\b Propiedades de la Grilla\b0\par
+\par
+Crear una fila\par
+\b\i <div class="row">\par
+    <!-- Content here -->\par
+</div>\par
+\b0\i0\par
+Numero total de columnas por fila\par
+12\par
+\par
+Crear una columna\par
+\b\i <div class="col">\par
+    <!-- Content here -->\par
+</div>\par
+\b0\i0\par
+la clase \ldblquote col\rdblquote  crea una columna sin un tama\'f1o especifico.\par
+Al no asignar un tama\'f1o especifico para las columnas, las columnas se repartir\'e1n todo el ancho disponible equitativamente.\par
+\par
+Crear una columna con tama\'f1o especifico\par
+\b\i <div class="col-4">\par
+</div>\par
+<div class="col-8">\par
+</div>\par
+\b0\i0\par
+\b Nota\b0\par
+Si el ancho de cada columna o la suma de todos los anchos de todas las columnas superan las 12 columnas por defecto, se creara una fila adicional para que las columnas se acomoden.\par
+\par
+Columnas de tama\'f1o especifico y auto\par
+\b\i <div class="col-8">\par
+</div>\par
+<div class="col">\par
+</div>\par
+<div class="col">\par
+</div>\par
+\b0\i0\par
+\b Nota\b0\par
+Si se especifica el tama\'f1o de una columna y si las dem\'e1s no fueron especificadas se repartiran todo el ancho que sobra equitativamente.\par
+\par
+Especificar el tama\'f1o de columnas para pantallas extra small (<576px)\par
+\b\i <div class="col-2">\par
+</div>\par
+\b0\i0\par
+Especificar el tama\'f1o de columnas para pantallas small (\f1\u8805?\f0 576px)\par
+\b\i <div class="col-sm-2">\par
+</div>\par
+\b0\i0\par
+\par
+Especificar el tama\'f1o de columnas para pantallas medium (\f1\u8805?\f0 768px)\par
+\b\i <div class="col-md-2">\par
+</div>\b0\i0\par
+\par
+Especificar el tama\'f1o de columnas para pantallas large (\f1\u8805?\f0 992px)\par
+\b\i <div class="col-lg-2">\par
+</div>\par
+\b0\i0\par
+Especificar el tama\'f1o de columnas para pantallas extra large (\f1\u8805?\f0 1200px)\par
+\b\i <div class="col-xl-2">\par
+</div>\par
+\b0\i0\par
+Ejemplo de Estructura de la Grilla\par
+\b\i <divclass="container">\par
+  <divclass="row">\par
+    <divclass="col">\par
+      Uno\par
+    </div>\par
+    <divclass="col">\par
+      Dos\par
+    </div>\par
+    <divclass="col">\par
+      Tres\par
+    </div>\par
+  </div>\par
+</div>\b0\i0\par
+\par
+Los contenedores son el elemento de dise\'f1o m\'e1s b\'e1sico en Bootstrap y son necesarios al usar nuestro sistema de grillas predeterminado.\par
+\par
+.container: ancho fijo\par
+.container-fluid: ancho fluido\par
+\par
+El sistema de grillas de Bootstrap usa una serie de contenedores, filas y columnas para dise\'f1ar y alinear el contenido. Est\'e1 construido con flexbox y responde completamente.\par
+\par
+el\f2  \f0 sistema\f2  \f0 de\f2  \f0 grillas\f2  \f0 de\f2  \f0 Bootstrap\f2  \f0 se\f2  \f0 basa\f2  \f0 en\f2  \f0 12\f2  \f0 columnas\f2  \f0 repartidas\f2  \f0 a\f2  \f0 lo\f2  \f0 largo\f2  \f0 de\f2  \f0 la\f2  \f0 pantalla\par
+\par
+1\f2  | \f0 2\f2  | \f0 3\f2  | \f0 4\f2  | \f0 5\f2  | \f0 6\f2  | \f0 7\f2  | \f0 8\f2  | \f0 9\f2  | \f0 10\f2  | \f0 11\f2  | \f0 12\par
+\par
+para\f2  \f0 utilizar\f2  \f0 esta\f2  \f0 herramienta\f2  \f0 debemos\f2  \f0 ir\f2  \f0 creando\f2  \f0 fillas\f2  \f0 con\f2  \f0 la\f2  \f0 clase\f2  .\f0 row\f2  \f0 y\f2  \f0 seccionarla\f2  \f0 en\f2  \f0 anchos\f2  \f0 con\f2  \f0 la\f2  \f0 clase\f2  .\f0 col\par
+\par
+las\f2  \f0 filas\f2  \f0 y\f2  \f0 las\f2  \f0 columnas\f2  \f0 viven\f2  \f0 dentro\f2  \f0 d\f2  \f0 elo\f2  \f0 que\f2  \f0 se\f2  \f0 conoce\f2  \f0 como\f2  \f0 un\f2  \f0 container\f2 .\f0\par
+\par
+los\f2  \f0 container\f2  \f0 pueden\f2  \f0 ser\par
+\par
+\f2 .\f0 container\f2 : \f0 va\f2  \f0 agregando\f2  \f0 un\f2  \f0 margen\f2  \f0 acorde\f2  \f0 al\f2  \f0 ancho\f2  \f0 de\f2  \f0 la\f2  \f0 pantalla\par
+\f2 .\f0 container\f2 -\f0 fluid\f2 : \f0 abarca\f2  \f0 el\f2  \f0 100%\f2  \f0 del\f2  \f0 ancho\f2  \f0 de\f2  \f0 la\f2  \f0 pantalla\par
+\par
+\ul\b 5-Reto\f2 : \f0 La\f2  \f0 grilla\f2  \f0 de\f2  \f0 Bootstrap\ulnone\b0\par
+La soluci\'f3n esta en el archivo del curso Reto.\par
+\par
+\ul\b 6-El\f2  \f0 footer\ulnone\b0\par
+\par
+\ul\b 7-El\f2  \f0 header\f2  \f0 de\f2  \f0 nuestro\f2  \f0 sitio\ulnone\b0\par
+\b Notas:\b0\par
+Propiedades\f2  \f0 de\f2  \f0 espaciado\par
+\par
+m\f2  - \f0 para\f2  \f0 las\f2  \f0 clases\f2  \f0 que\f2  \f0 establecen\f2  \f0 margin\par
+\par
+p\f2  - \f0 para\f2  \f0 las\f2  \f0 clases\f2  \f0 que\f2  \f0 establecen\f2  \f0 padding\par
+\par
+Donde\f2  \f0 los\f2  \f0 lados\f2  \f0 es\f2  \f0 uno\f2  \f0 de\f2 :\f0\par
+\par
+t\f2 - \f0 para\f2  \f0 las\f2  \f0 clases\f2  \f0 que\f2  \f0 establecen\f2  \f0 margin\f2 -\f0 top\f2  \f0 o\f2  \f0 padding\f2 -\f0 top\par
+\par
+b\f2 - \f0 para\f2  \f0 las\f2  \f0 clases\f2  \f0 que\f2  \f0 establecen\f2  \f0 margin\f2 -\f0 bottom\f2  \f0 o\f2  \f0 padding\f2 -\f0 bottom\par
+\par
+l\f2 - \f0 para\f2  \f0 las\f2  \f0 clases\f2  \f0 que\f2  \f0 establecen\f2  \f0 margin\f2 -\f0 left\f2  \f0 o\f2  \f0 padding\f2 -\f0 left\par
+\par
+r\f2 - \f0 para\f2  \f0 las\f2  \f0 clases\f2  \f0 que\f2  \f0 establecen\f2  \f0 margin\f2 -\f0 right\f2  \f0 o\f2  \f0 padding\f2 -\f0 right\par
+\par
+x\f2 - \f0 para\f2  \f0 las\f2  \f0 clases\f2  \f0 que\f2  \f0 establecen\f2  \f0 tanto\f2  -\f0 left\f2  \f0 y\f2  -\f0 right\par
+\par
+y\f2 - \f0 para\f2  \f0 las\f2  \f0 clases\f2  \f0 que\f2  \f0 establecen\f2  \f0 tanto\f2  -\f0 top\f2  \f0 y\f2  -\f0 bottom\par
+\par
+en\f2  \f0 blanco\f2  - \f0 para\f2  \f0 las\f2  \f0 clases\f2  \f0 que\f2  \f0 establecen\f2  \f0 un\f2  \f0 margin\f2  \f0 o\f2  \f0 padding\f2  \f0 en\f2  \f0 los\f2  \f0 4\f2  \f0 lados\f2  \f0 del\f2  \f0 elemento\par
+Donde\f2  \f0 el\f2  \f0 tama\'f1o\f2  \f0 es\f2  \f0 uno\f2  \f0 de\f2 :\f0\par
+\par
+0\f2 - \f0 Para\f2  \f0 las\f2  \f0 clases\f2  \f0 que\f2  \f0 eliminen\f2  \f0 el\f2  \f0 margino\f2  \f0 padding\f2  \f0 configur\'e1ndolo\f2  \f0 como\f2 .\f0 0\par
+\par
+1\f2 - (\f0 por\f2  \f0 defecto\f2 ) \f0 para\f2  \f0 las\f2  \f0 clases\f2  \f0 que\f2  \f0 establecen\f2  \f0 margino\f2  \f0 padding\f2  \f0 para\f2  \f0 $\f2  \f0 spacer\f2  \f0 *\f2  .\f0 25\par
+\par
+2\f2 - (\f0 por\f2  \f0 defecto\f2 ) \f0 para\f2  \f0 las\f2  \f0 clases\f2  \f0 que\f2  \f0 establecen\f2  \f0 margino\f2  \f0 padding\f2  \f0 para\f2  \f0 $\f2  \f0 spacer\f2  \f0 *\f2  .\f0 5\par
+\par
+3\f2 - (\f0 por\f2  \f0 defecto\f2 ) \f0 para\f2  \f0 las\f2  \f0 clases\f2  \f0 que\f2  \f0 establecen\f2  \f0 margino\f2  \f0 padding\f2  \f0 para\f2  \f0 $\f2  \f0 spacer\par
+\par
+4\f2 - (\f0 por\f2  \f0 defecto\f2 ) \f0 para\f2  \f0 las\f2  \f0 clases\f2  \f0 que\f2  \f0 establecen\f2  \f0 margino\f2  \f0 padding\f2  \f0 para\f2  \f0 $\f2  \f0 spacer\f2  \f0 *\f2  \f0 1\f2 .\f0 5\par
+\par
+5\f2 - (\f0 por\f2  \f0 defecto\f2 ) \f0 para\f2  \f0 las\f2  \f0 clases\f2  \f0 que\f2  \f0 establecen\f2  \f0 margino\f2  \f0 padding\f2  \f0 para\f2  \f0 $\f2  \f0 spacer\f2  \f0 *\f2  \f0 3\par
+\par
+auto\f2 - \f0 Para\f2  \f0 las\f2  \f0 clases\f2  \f0 que\f2  \f0 configuran\f2  \f0 el\f2  \f0 margin\f2  \f0 auto\par
+\par
+\ul\b 8-Creando\f2  \f0 un\f2  \f0 carousel\f2  \f0 de\f2  \f0 im\'e1genes\par
+\ulnone\b0 El\f2  \f0 carousel\f2  \f0 nos\f2  \f0 permite\f2  \f0 ver\f2  \f0 un\f2  \f0 conjunto\f2  \f0 de\f2  \f0 im\'e1genes\f2  \f0 y\f2  \f0 mostrarlas\f2  \f0 de\f2  \f0 manera\f2  \f0 autom\'e1tica\f2 . \f0 Encuentra\f2  \f0 m\'e1s\f2  \f0 informaci\'f3n\f2  \f0 en\f2  {\f0{\field{\*\fldinst{HYPERLINK https://getbootstrap.com/docs/4.1/components/carousel/ }}{\fldrslt{https\f2 ://\f0 getbootstrap\f2 .\f0 com\f2 /\f0 docs\f2 /\f0 4\f2 .\f0 1\f2 /\f0 components\f2 /\f0 carousel\f2 /\ul0\cf0}}}}\f0\fs22\par
+\par
+\b Notas:\b0\par
+En\f2  \f0 el\f2  \f0 minuto\f2  \f0 7\f2 :\f0 58\f2  \f0 el\f2  \f0 profesor\f2  \f0 utiliza\f2  \f0 la\f2  \f0 propiedad\f2  \f0 object\f2 -\f0 fit\f2  \f0 y\f2  \f0 que\f2  \f0 es\f2 ?, \f0 bueno\f2  \f0 object\f2 -\f0 fit\f2 , \f0 es\f2  \f0 una\f2  \f0 propiedad\f2  \f0 que\f2  \f0 permite\f2  \f0 preservar\f2  \f0 la\f2  \f0 relacion\f2  \f0 de\f2  \f0 aspecto\f2  \f0 de\f2  \f0 la\f2  \f0 imagen\f2 , \f0 ocupando\f2  \f0 tantos\f2  \f0 espacios\f2  \f0 como\f2  \f0 sea\f2  \f0 posible\f2  \f0 ajustandose\f2  \f0 al\f2  \f0 tama\'f1o\f2  \f0 de\f2  \f0 su\f2  \f0 contenedor\f2 .\f0\par
+La\f2  \f0 object\f2 -\f0 fitpropiedad\f2  \f0 puede\f2  \f0 tener\f2  \f0 los\f2  \f0 siguientes\f2  \f0 valores\f2 :\f0\par
+\par
+fill\f2 - \f0 Esto\f2  \f0 es\f2  \f0 por\f2  \f0 defecto\f2 . \f0 El\f2  \f0 contenido\f2  \f0 reemplazado\f2  \f0 est\'e1\f2  \f0 dimensionado\f2  \f0 para\f2  \f0 llenar\f2  \f0 el\f2  \f0 cuadro\f2  \f0 de\f2  \f0 contenido\f2  \f0 del\f2  \f0 elemento\f2 . \f0 Si\f2  \f0 es\f2  \f0 necesario\f2 , \f0 el\f2  \f0 objeto\f2  \f0 se\f2  \f0 estirar\'e1\f2  \f0 o\f2  \f0 aplastar\'e1\f2  \f0 para\f2  \f0 ajustarse\par
+\par
+contain\f2  - \f0 El\f2  \f0 contenido\f2  \f0 reemplazado\f2  \f0 se\f2  \f0 escala\f2  \f0 para\f2  \f0 mantener\f2  \f0 su\f2  \f0 relaci\'f3n\f2  \f0 de\f2  \f0 aspecto\f2  \f0 mientras\f2  \f0 se\f2  \f0 ajusta\f2  \f0 dentro\f2  \f0 del\f2  \f0 cuadro\f2  \f0 de\f2  \f0 contenido\f2  \f0 del\f2  \f0 elemento\par
+\par
+cover\f2 - \f0 El\f2  \f0 contenido\f2  \f0 reemplazado\f2  \f0 est\'e1\f2  \f0 dimensionado\f2  \f0 para\f2  \f0 mantener\f2  \f0 su\f2  \f0 relaci\'f3n\f2  \f0 de\f2  \f0 aspecto\f2  \f0 mientras\f2  \f0 llena\f2  \f0 el\f2  \f0 cuadro\f2  \f0 de\f2  \f0 contenido\f2  \f0 completo\f2  \f0 del\f2  \f0 elemento\f2 . \f0 El\f2  \f0 objeto\f2  \f0 se\f2  \f0 recortar\'e1\f2  \f0 para\f2  \f0 que\f2  \f0 quepa\par
+\par
+none\f2  - \f0 El\f2  \f0 contenido\f2  \f0 reemplazado\f2  \f0 no\f2  \f0 se\f2  \f0 redimensiona\par
+\par
+scale\f2 -\f0 down\f2  - \f0 El\f2  \f0 contenido\f2  \f0 se\f2  \f0 clasifica\f2  \f0 como\f2  \f0 si\f2  \f0 no\f2  \f0 se\f2  \f0 especificara\f2  \f0 ninguno\f2  \f0 o\f2  \f0 contenga\f2  (\f0 dar\'eda\f2  \f0 como\f2  \f0 resultado\f2  \f0 un\f2  \f0 tama\'f1o\f2  \f0 de\f2  \f0 objeto\f2  \f0 concreto\f2  \f0 m\'e1s\f2  \f0 peque\'f1o\f2 )\f0\par
+\par
+ejemplo\f2  \f0 de\f2  \f0 uso\f2 :\f0\par
+\f2 .\f0 fill\f2  \{\f0 object\f2 -\f0 fit\f2 : \f0 fill\f2 ;\}\f0\par
+\f2 .\f0 contain\f2  \{\f0 object\f2 -\f0 fit\f2 : \f0 contain\f2 ;\}\f0\par
+\f2 .\f0 cover\f2  \{\f0 object\f2 -\f0 fit\f2 : \f0 cover\f2 ;\}\f0\par
+\f2 .\f0 scale\f2 -\f0 down\f2  \{\f0 object\f2 -\f0 fit\f2 : \f0 scale\f2 -\f0 down\f2 ;\}\f0\par
+\f2 .\f0 none\f2  \{\f0 object\f2 -\f0 fit\f2 : \f0 none\f2 ;\}\f0\par
+\par
+imagen\f2  \f0 sin\f2  \f0 object\f2 -\f0 fit\par
+\par
+\par
+imagen\f2  \f0 con\f2  \f0 object\f2 -\f0 fit\par
+\par
+\par
+mas\f2  \f0 informacion\f2 :\f0\par
+\par
+main\par
+Se\f2  \f0 usa\f2  \f0 esta\f2  \f0 etiqueta\f2  \f0 para\f2  \f0 definir\f2  \f0 el\f2  \f0 contenido\f2  \f0 principal\f2  \f0 del\f2  \f0 sitio\par
+\par
+\f2 _\f0 La\f2  \f0 etiqueta\f2  <\f0 main\f2 > \f0 especifica\f2  \f0 el\f2  \f0 contenido\f2  \f0 principal\f2  \f0 de\f2  \f0 un\f2  \f0 documento\f2 .\f0\par
+\par
+El\f2  \f0 contenido\f2  \f0 dentro\f2  \f0 del\f2  \f0 elemento\f2  <\f0 main\f2 > \f0 debe\f2  \f0 ser\f2  \f0\'fanico\f2  \f0 para\f2  \f0 el\f2  \f0 documento\f2 . \f0 No\f2  \f0 debe\f2  \f0 contener\f2  \f0 ning\'fan\f2  \f0 contenido\f2  \f0 que\f2  \f0 se\f2  \f0 repita\f2  \f0 en\f2  \f0 documentos\f2  \f0 como\f2  \f0 barras\f2  \f0 laterales\f2 , \f0 enlaces\f2  \f0 de\f2  \f0 navegaci\'f3n\f2 , \f0 informaci\'f3n\f2  \f0 de\f2  \f0 derechos\f2  \f0 de\f2  \f0 autor\f2 , \f0 logotipos\f2  \f0 del\f2  \f0 sitio\f2  \f0 y\f2  \f0 formularios\f2  \f0 de\f2  \f0 b\'fasqueda\f2 .\f0\par
+\par
+Nota\f2 : \f0 no\f2  \f0 debe\f2  \f0 haber\f2  \f0 m\'e1s\f2  \f0 de\f2  \f0 un\f2  \f0 elemento\f2  <\f0 main\f2 > \f0 en\f2  \f0 un\f2  \f0 documento\f2 . \f0 El\f2  \f0 elemento\f2  <\f0 main\f2 > \f0 NO\f2  \f0 debe\f2  \f0 ser\f2  \f0 descendiente\f2  \f0 de\f2  \f0 un\f2  \f0 elemento\f2  <\f0 article\f2 >, <\f0 aside\f2 >, <\f0 footer\f2 >, <\f0 header\f2 > \f0 o\f2  <\f0 nav\f2 >._\f0\par
+\par
+section\par
+La\f2  \f0 etiqueta\f2  <\f0 section\f2 > \f0 define\f2  \f0 las\f2  \f0 secciones\f2  \f0 de\f2  \f0 un\f2  \f0 documento\f2 , \f0 como\f2  \f0 cap\'edtulos\f2 , \f0 encabezados\f2 , \f0 pies\f2  \f0 de\f2  \f0 p\'e1gina\f2  \f0 o\f2  \f0 cualquier\f2  \f0 otra\f2  \f0 secci\'f3n\f2  \f0 del\f2  \f0 documento\f2 .\f0\par
+por\f2  \f0 lo\f2  \f0 general\f2  \f0 dentro\f2  \f0 del\f2  \f0 main\f2  \f0 se\f2  \f0 encuentran\f2  \f0 las\f2  \f0 secciones\par
+\par
+\ul\b 9-Agregando\f2  \f0 texto\f2  \f0 informativo\f2  \f0 del\f2  \f0 evento\ulnone\par
+\b0 Ahora\f2  \f0 vamos\f2  \f0 a\f2  \f0 incluir\f2  \f0 un\f2  \f0 texto\f2  \f0 informativo\f2  \f0 sobre\f2  \f0 nuestro\f2  \f0 carousel\f2  \f0 de\f2  \f0 im\'e1genes\f2 . \f0 Encuentra\f2  \f0 m\'e1s\f2  \f0 informaci\'f3n\f2  \f0 de\f2  \f0 los\f2  \f0 botones\f2  \f0 en\f2  {\f0{\field{\*\fldinst{HYPERLINK https://getbootstrap.com/docs/4.1/components/buttons/ }}{\fldrslt{https\f2 ://\f0 getbootstrap\f2 .\f0 com\f2 /\f0 docs\f2 /\f0 4\f2 .\f0 1\f2 /\f0 components\f2 /\f0 buttons\f2 /\ul0\cf0}}}}\f0\fs22\par
+\ul\b\i\f3\lang10\par
+}
+ 
